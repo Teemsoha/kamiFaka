@@ -91,7 +91,7 @@ def init_db(update=False):
     db.session.add(
         Config('contact_us', '<p>示例，请在管理后台>>网站设置里修改，支持HTML格式</p>', '首页-联系我们', True))
     db.session.add(Config(
-        'web_footer', '<a style="color: #fafafa;" href="https://github.com/Baiyuetribe/kamiFaka">鲁ICP备1101XXXX号-10</a>', '可填写备案信息', True))
+        'web_footer', '<a style="color: #fafafa;" href="https://github.com/Teemsoha/kamiFaka">鲁ICP备1101XXXX号-10</a>', '可填写备案信息', True))
     db.session.add(Config('top_notice', '稳定版演示站点，公告信息可在后台设置', '首页公告', True))
     db.session.add(
         Config('toast_notice', '稳定版演示站点，公告信息可在后台设置', '首页滑动消息设置', True))
@@ -101,16 +101,16 @@ def init_db(update=False):
     db.session.add(Config('contact_option', '0', '是否启用联系方式查询[0启用，1关闭]', True))
     db.session.add(Config('theme', 'list', '主题', False))
     db.session.add(Config(
-        'kamiFaka', 'https://github.com/Baiyuetribe/kamiFaka', 'Github项目地址，用于手动检测新版', False))
+        'kamiFaka', 'https://github.com/Teemsoha/kamiFaka', 'Github项目地址，用于手动检测新版', False))
     db.session.add(Config('kamiFaka_v', '1.88', 'Github项目地址，用于手动检测新版', False))
 
     # 通知渠道 ：名称；对管理员开关；对用户开关；对管理员需要管理员账号；用户无；名称+config+管理员+admin_switch+user_switch
     db.session.add(Notice(
-        '邮箱通知', "{'sendname':'no_replay','sendmail':'demo@gmail.com','smtp_address':'smtp.163.com','smtp_port':'465','smtp_pwd':'ZZZZZZZ'}", 'demo@qq.com', False, False))
+        '邮箱通知', "{'sendname':'no_replay','sendmail':'demo@gmail.com','smtp_address':'smtp.163.com','Hashem2p':'465','smtp_pwd':'ZZZZZZZ'}", 'demo@qq.com', False, False))
     db.session.add(Notice(
         '微信通知', "{'token':'AT_nvlYDjev89gV96hBAvUX5HR3idWQwLlA'}", 'xxxxxxxxxxxxxxxx', False, False))
     db.session.add(Notice(
-        'TG通知', "{'TG_TOKEN':'1290570937:AAHaXA2uOvDoGKbGeY4xVIi5kR7K55saXhs'}", '445545444', False, False))
+        'TG通知', "{'TG_TOKEN':'7008032437:AAHYpmXr-V818CT0NEqQsbALmGqtnAe4WiI'}", '445545444', False, False))
     db.session.add(Notice(
         '短信通知', "{'username':'XXXXXX','password':'YYYYY','tokenYZM':'必填','templateid':'必填'}", '15347875415', False, False))
     db.session.add(
@@ -127,7 +127,7 @@ def init_db(update=False):
                    '472835979', '不错', 9.99, 1, 1.9, 'TG卡密DEMO', None, None))
 
     # 插件配置信息
-    db.session.add(Plugin('TG发卡', "{'TG_TOKEN':'1488086653:AAHihuO0JuvmiDNZtsYcDBpUhL1rTDO6o1C'}",
+    db.session.add(Plugin('TG发卡', "{'TG_TOKEN':'7125295143:AAE1t8O67DVQ7mCjoqjI6t-MLE0CyJ_8dvI'}",
                    '### 示例 \n请在管理后台--》Telegram里设置，支持HTML格式', False))
     db.session.add(Plugin('微信公众号', "{'PID':'xxxxxxxxxxxx'}",
                    '<p>示例，请在管理后台>>Telegram里设置，支持HTML格式</p>', False))
